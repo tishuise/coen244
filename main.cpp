@@ -25,3 +25,11 @@ class BabyDog : public Dog {
         // void speak() override { cout << "Idk";}           cannot override final since speak in Dog is final
 };
 
+class Walker : public Animal {};
+class Swimmer : public Animal {};
+
+class Amphibian : public Walker, public Swimmer {
+
+    public:
+        int age;
+};
