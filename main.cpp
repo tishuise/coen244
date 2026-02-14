@@ -28,7 +28,7 @@ class BabyDog : public Dog {
 class Walker : public Animal {};
 class Swimmer : public Animal {};
 
-class Amphibian : public Walker, public Swimmer {
+class Amphibian : virtual public Walker, virtual public Swimmer {
 
     public:
         int age;
